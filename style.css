@@ -1,0 +1,217 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    background-color: #e3e4e8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1rem;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: rgb(206, 205, 205);
+    position: relative;
+    height: 70px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#docs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.footerlinks {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+#copyright {
+    font-size: 0.6rem;
+    padding-bottom: 10px;
+    position: absolute;
+    right: 10px;
+    color:#444;
+}
+
+#formsec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+}
+
+.container {
+    margin-top: 7rem;
+    max-width: 768px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+.flexbox {
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 3px;
+    height: 300px;
+}
+
+.level {
+    background-color: rgb(197, 197, 197);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.price {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.trombone-description {
+    width: 50%;
+    margin-inline: auto;
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+button {
+    width: 30%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #f1c40f;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 50;
+    border-radius: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: none;
+}
+
+#pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#videoclip {
+    margin-top: 40px;
+    width: 400px;
+    margin-inline: auto;
+    margin-bottom: 40px;
+}
+
+#video {
+    width: 100%;
+}
+
+#email {
+    width: 18rem;
+    height: 2rem;
+    padding-left: 4px;
+    font-size: 20px;
+}
+
+#submit {
+    width: 60%;
+    margin-top: 1.2rem;
+    background-color: #f1c40f;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+#formtext {
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#nav-bar {
+    position: relative;
+    width: min(90%, 70.5rem);
+    margin-inline: auto;
+    text-align:  center;
+}
+
+#header-img {
+    height: 3rem;
+    
+}
+
+
+@media (min-width: 920px) {
+    #header {
+        position: relative;
+    }
+    
+    #logo {
+        position: absolute;
+        left: 0px;
+        transform: scale(0.8);
+    }
+
+    #videoclip {
+        width: 500px;
+    }
+
+    #pricing {
+        flex-direction: row;
+        margin-inline: 1rem;
+        flex-basis: 100%;
+    }
+
+    nav {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        justify-content: flex-end;
+        padding: 20px 0 20px 0;
+    }
+}
